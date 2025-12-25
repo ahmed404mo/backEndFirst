@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "sara",
+    "email": "ssssss@gamil.com",
+    "age": 26
+  },
+  {
+    "id": 2,
+    "name": "ahmed",
+    "email": "aaaaaa@gamil.com",
+    "age": 27
+  },
+  {
+    "id": 1766695143333,
+    "name": "mokhtar",
+    "email": "mmmmm@gmail.com",
+    "password": 12345
+  },
+  {
+    "id": 1766696709326,
+    "name": "",
+    "email": "",
+    "password": ""
+  }
+]

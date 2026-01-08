@@ -1,131 +1,123 @@
-🛡️ SecureAuth System
 
-A modern, secure, and interactive authentication platform built with Next.js and Node.js.
+<p align="center">
+  <img src="https://img.icons8.com/fluency/96/security-checked.png" alt="SecureAuth Logo"/>
+  <h1 align="center">🛡️ SecureAuth System</h1>
+  <p align="center">A modern, secure, and interactive authentication platform built with <b>Next.js</b> and <b>Node.js</b></p>
+</p>
 
-📖 Overview
+---
 
-SecureAuth is a full-stack authentication solution designed to demonstrate best practices in frontend security and modern UI design. It features a complete user lifecycle (Sign Up, Login, Update, Delete) with a heavy focus on Input Sanitization to prevent common web attacks (like XSS and Injection) by strictly filtering special characters.
+## 📖 Overview
 
-The interface is built with a stunning Glassmorphism aesthetic, smooth animations, and real-time feedback using Toast notifications.
+**SecureAuth** is a full-stack authentication solution designed to demonstrate **best practices** in frontend security and modern UI design.  
+It includes the complete user lifecycle:
 
-✨ Key Features
+✅ Sign Up  
+✅ Login  
+✅ Update Profile  
+✅ Delete Account  
 
-🔒 Security & Logic
+Focuses heavily on **Input Sanitization** to prevent common web attacks like **XSS** and **SQL Injection**.
 
-Strict Input Sanitization: Automatically strips dangerous characters (e.g., #, $, <, >) from input fields to prevent SQL Injection and XSS attacks.
+The interface features **Glassmorphism design**, smooth animations, and real-time **Toast notifications**.
 
-Session Management: Persists user state using localStorage with hydration handling in Next.js.
+---
 
-Protected Routes: Restricts access to the dashboard for authenticated users only.
+## ✨ Key Features
 
-🎨 UI/UX Design
+### 🔒 Security & Logic
+- **Strict Input Sanitization:** Automatically strips dangerous characters (`#`, `$`, `<`, `>`) from input fields.  
+- **Session Management:** Persists user state using `localStorage` with hydration handling in Next.js.  
+- **Protected Routes:** Dashboard accessible **only** to authenticated users.
 
-Modern Glassmorphism: High-quality frosted glass effects using Tailwind CSS backdrop-blur.
+### 🎨 UI/UX Design
+- **Modern Glassmorphism:** Frosted glass effects using Tailwind CSS `backdrop-blur`.  
+- **Interactive Dashboard:** View profile, update details, or delete account.  
+- **Visual Feedback:** Real-time Toast notifications for success, error, and warnings.  
+- **Responsive Design:** Optimized for Desktop, Tablet, and Mobile.  
+- **Smooth Animations:** Elegant transitions and entrance effects.
 
-Interactive Dashboard: Users can view their profile, update details, or delete their account.
+---
 
-Visual Feedback: Real-time Toast notifications for success, error, and warning states.
+## 🛠️ Tech Stack
 
-Responsive: Fully optimized for Desktop, Tablet, and Mobile.
+| Layer      | Technology |
+|------------|------------|
+| Frontend   | Next.js 13+, React.js |
+| Styling    | Tailwind CSS |
+| Icons      | Lucide React |
+| Backend    | Node.js, Express.js |
+| Database   | JSON File System (Simulated DB) |
 
-Animations: Smooth transitions and entrance animations.
+---
 
-🛠️ Tech Stack
+## 🚀 Getting Started
 
-Frontend: Next.js 13+ (App Router), React.js
+### Prerequisites
+- Node.js installed on your machine.
 
-Styling: Tailwind CSS
+### 1️⃣ Clone the Repository
 
-Icons: Lucide React
-
-Backend: Node.js, Express.js
-
-Database: JSON File System (Simulated DB for demo purposes)
-
-🚀 Getting Started
-
-Follow these steps to run the project locally.
-
-Prerequisites
-
-Node.js installed on your machine.
-
-1. Clone the Repository
-
-git clone [https://github.com/your-username/secure-auth-system.git](https://github.com/your-username/secure-auth-system.git)
+```bash
+git clone https://github.com/your-username/secure-auth-system.git
 cd secure-auth-system
+````
 
+### 2️⃣ Setup the Backend
 
-2. Setup the Backend
-
-Navigate to the server file and install dependencies (if separated) or run the Node server:
-
-# Assuming backend logic is in a file named server.js
+```bash
+# Assuming backend logic is in server.js
 node server.js
+```
 
+Backend runs on [http://localhost:3000](http://localhost:3000)
 
-The server should run on http://localhost:3000.
+### 3️⃣ Setup the Frontend
 
-3. Setup the Frontend (Next.js)
-
-Open a new terminal and run:
-
+```bash
 npm install
 npm run dev
+```
 
+Frontend runs on [http://localhost:3001](http://localhost:3001) (or the port shown in your terminal)
 
-Open http://localhost:3001 (or the port shown in your terminal) to view the app.
+---
 
-📡 API Endpoints
+## 📡 API Endpoints
 
-The frontend communicates with a Node.js backend via the following endpoints:
+| Method | Endpoint | Description                                 |
+| ------ | -------- | ------------------------------------------- |
+| POST   | /signup  | Create a new user account                   |
+| POST   | /login   | Authenticate user & receive session data    |
+| PATCH  | /updata  | Update user profile (Name, Email, Password) |
+| DELETE | /delete  | Permanently delete user account             |
 
-Method
+---
 
-Endpoint
+## 🛡️ Security Implementation Example
 
-Description
-
-POST
-
-/signup
-
-Create a new user account
-
-POST
-
-/login
-
-Authenticate user & receive session data
-
-PATCH
-
-/updata
-
-Update user profile (Name, Email, Password)
-
-DELETE
-
-/delete
-
-Permanently delete user account
-
-🛡️ Security Implementation Example
-
-Here is how we handle input sanitization on the client side to protect data integrity:
-
+```javascript
 const sanitizeInput = (value) => {
   // Removes special characters often used in exploits
   return value.replace(/[#$<>&"']/g, "");
 };
+```
 
+This ensures **data integrity** and protects the app from malicious inputs.
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+Feel free to open a **pull request** or **issue**.
 
-📝 License
+---
 
-This project is MIT licensed.
+## 📝 License
 
-Made with ❤️ by Ahmed Mokhtar
+This project is licensed under **MIT**.
+
+Made with ❤️ by **Ahmed Mokhtar**
+
+```
